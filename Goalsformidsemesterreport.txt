@@ -1,0 +1,20 @@
+﻿* color constancy - use direction of light as joint variable (behind/front used to explain shading)
+* intrinsic image ^^
+* weighted majority voting - using lidar to group voting blocks, have the different blobs (colors) each vote
+* possibly classify speedgates with segmentation
+* possibly classify far buoys with more camera based detection
+* knn or gaussian mixture on 3x3 or 5x5 window on picture
+* neural networks as alternative
+* need lots of data → use generated images? add different false background?
+
+
+- include pictures of difficult cases in report to show how the classifications are difficult
+=================
+after:
+
+
+why not use KNN / majority vote?
+each voter would have to already know what color it would vote for. We could set ranges of r/g/b or h/s/v values for these voters to decide what color, but this is the same as the color filters already used on the boat- and these don’t work.
+
+
+guidelines for boxing buoys:
