@@ -1,4 +1,4 @@
 load('buoy_data/boxes_jocelyn0.mat');
-name = ['jocelyn_pics_init/' pictureData{1,3} 'png'];
+name = ['pics/' pictureData{1,3} 'png']
 pictureData{1,1,:};
-hist = histogram(pictureData{1,1}, name);
+[hist_mat, hist_vec] = histogram(pictureData{1,1}, name);
