@@ -1,13 +1,13 @@
 # This Makefile is used under Linux
 
-MATLABDIR ?= /Applications/MATLAB_R2014a.app
+MATLABDIR ?= /usr/caen/matlab-2014a
 CXX ?= g++
 #CXX = g++-3.3
 CC ?= gcc
 CFLAGS = -Wall -Wconversion -O3 -fPIC -I$(MATLABDIR)/extern/include -I..
 
 MEX = $(MATLABDIR)/bin/mex
-# MEX_OPTION = CC\#$(CXX) CXX\#$(CXX) CFLAGS\#"$(CFLAGS)" CXXFLAGS\#"$(CFLAGS)"
+#MEX_OPTION = CC\#$(CXX) CXX\#$(CXX) CFLAGS\#"$(CFLAGS)" CXXFLAGS\#"$(CFLAGS)"
 MEX_OPTION = CC=$(CXX) CXX=$(CXX) CFLAGS="$(CFLAGS)" CXXFLAGS="(CFLAGS)"
 # comment the following line if you use MATLAB on a 32-bit computer
 MEX_OPTION += -largeArrayDims
