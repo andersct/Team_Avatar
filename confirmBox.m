@@ -4,8 +4,12 @@ function response = confirmBox()
 
 while(true)
     response = input('Save box? y/n: ', 's');
-    if response == 'y' || response == 'n'
-        break;
+    try
+        if response == 'y' || response == 'n'
+            break;
+        end
+    catch
+        display('Error in input format')
     end
 end
 
