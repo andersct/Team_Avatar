@@ -47,27 +47,11 @@ University of Michigan \\
 \end{abstract}
 
 \section{Introduction}
-Each summer the autonomous robotic boat team UM:Autonomy at the University of Michigan competes in the Association for 
-Unmanned Vehicle Systems International's RoboBoat competition held in Virginia Beach, VA, against various robotics labs 
-and other clubs. Since a pond serves as the site for the various challenges used to judge the robots, buoys act as the primary 
-landmarks. Solidifying buoys' importance, there are often few other objects usable as landmarks so buoys most often serve 
-as the source of loop closures in the robot's long term path planning, allowing the robot to build an accurate internal map 
-and minimize drift in its state. Knowing additional features such as color will further reduce contradictory information 
-that can produce incorrect mapping. Buoys may also serve as boundaries or goals for certain challenges [competition specs] 
-with determining the buoy color being in some cases part of the challenge. Thus there is substantial need to accurately identify 
+Each summer the autonomous robotic boat team UM:Autonomy at the University of Michigan competes in the Association for Unmanned Vehicle Systems International's RoboBoat competition held in Virginia Beach, VA, against various robotics labs and other clubs. Since a pond serves as the site for the various challenges used to judge the robots, buoys act as the primary landmarks. Solidifying buoys' importance, there are often few other objects usable as landmarks so buoys most often serve as the source of loop closures in the robot's long term path planning, allowing the robot to build an accurate internal map and minimize drift in its state. Knowing additional features such as color will further reduce contradictory information that can produce incorrect mapping. Buoys may also serve as boundaries or goals for certain challenges [competition specs] with determining the buoy color being in some cases part of the challenge. Thus there is substantial need to accurately identify 
 buoy color.
-\\Currently the UM:Autonomy robotic boat relies on color filters to determine color. This involves specifying bounds in RGB values for each color of buoy, and classifying buoys according to their match with the closest color template. These filters 
-are faulty because the tuning is highly susceptible to bias on current lighting conditions, resulting in detections that work 
-well for several hours before deteriorating in accuracy. This is especially apparent in Virginia where the sun will be high 
-in the sky for most of the day, casting glare on the buoys and water, with the occasional cloud passing in front to cast 
-a shadow the entire competition ground. Rainy and overcast days present yet another set of lighting conditions, and 
-even on days when the sun stays high in the sky, backlit green buoys can appear black \textit{(fig.1 left)}, yellow can appear
-green, and washed out red may look orange. Additionally white and black are difficult to filter because filters that do so 
-generally have high false positive rates, ending up including the very light or very dark patches of water produced with the 
+\\Currently the UM:Autonomy robotic boat relies on color filters to determine color. This involves specifying bounds in RGB values for each color of buoy, and classifying buoys according to their match with the closest color template. These filters are faulty because the tuning is highly susceptible to bias on current lighting conditions, resulting in detections that work well for several hours before deteriorating in accuracy. This is especially apparent in Virginia where the sun will be high in the sky for most of the day, casting glare on the buoys and water, with the occasional cloud passing in front to cast a shadow the entire competition ground. Rainy and overcast days present yet another set of lighting conditions, and even on days when the sun stays high in the sky, backlit green buoys can appear black \textit{(fig.1 left)}, yellow can appear green, and washed out red may look orange. Additionally white and black are difficult to filter because filters that do so generally have high false positive rates, ending up including the very light or very dark patches of water produced with the 
 noon sun's lighting \textit{(fig.1 right)}.
-\\In this paper we examine the results of various supervised learning techniques applied to classifying buoy color, aiming to 
-create a procedure to accurately classify buoy colors in a variety of lighting conditions, creating a robust system that requires 
-minimal maintenance.
+\\In this paper we examine the results of various supervised learning techniques applied to classifying buoy color, aiming to create a procedure to accurately classify buoy colors in a variety of lighting conditions, creating a robust system that requires minimal maintenance.
 \\
 \\
 \\
