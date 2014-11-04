@@ -47,7 +47,7 @@ University of Michigan \\
 \end{abstract}
 
 \section{Introduction}
-Each summer the autonomous robotic boat team UM:Autonomy at the University of Michigan competes in the Association for Unmanned Vehicle Systems International's RoboBoat competition held in Virginia Beach, VA, against various robotics labs and other clubs. Since a pond serves as the site for the various challenges used to judge the robots, buoys act as the primary landmarks. Solidifying buoys' importance, there are often few other objects usable as landmarks so buoys most often serve as the source of loop closures in the robot's long term path planning, allowing the robot to build an accurate internal map and minimize drift in its state. Knowing additional features such as color will further reduce contradictory information that can produce incorrect mapping. Buoys may also serve as boundaries or goals for certain challenges [competition specs] with determining the buoy color being in some cases part of the challenge. Thus there is substantial need to accurately identify 
+Each summer the autonomous robotic boat team UM:Autonomy at the University of Michigan competes in the Association for Unmanned Vehicle Systems International's RoboBoat competition held in Virginia Beach, VA against various robotics labs and other clubs. Since a pond serves as the site for the various challenges used to judge the robots, buoys act as the primary landmarks. Solidifying buoys' importance, there are often few other objects usable as landmarks so buoys most often serve as the source of loop closures in the robot's long term path planning, allowing the robot to build an accurate internal map and minimize drift in its state. Knowing additional features such as color will further reduce contradictory information that can produce incorrect mapping. Buoys may also serve as boundaries or goals for certain challenges [competition specs] with determining the buoy color being in some cases part of the challenge. Thus there is substantial need to accurately identify 
 buoy color.
 \\\\Currently the UM:Autonomy robotic boat relies on color filters to determine color. This involves specifying bounds in RGB values for each color of buoy, and classifying buoys according to their match with the closest color template. These filters are faulty because the tuning is highly susceptible to bias on current lighting conditions, resulting in detections that work well for several hours before deteriorating in accuracy. This is especially apparent in Virginia where the sun will be high in the sky for most of the day, casting glare on the buoys and water, with the occasional cloud passing in front to cast a shadow the entire competition ground. Rainy and overcast days present yet another set of lighting conditions, and even on days when the sun stays high in the sky, backlit green buoys can appear black \textit{(fig.1 left)}, yellow can appear green, and washed out red may look orange. Additionally white and black are difficult to filter because filters that do so generally have high false positive rates, ending up including the very light or very dark patches of water produced with the 
 noon sun's lighting \textit{(fig.1 right)}.
@@ -103,16 +103,7 @@ Naive Bayes classifier, which performs very well, as described later.
 // cyrus other related work
 
 \section{Experimental Results}
-Using both linear SVM and multinomial Naive Bayes, we achieve excellent accuracy rates, especially compared to
-current methods discussed in related works. With enough training examples, both methods achieve over 98\% accuracy. 
-Naive Bayes performs marginally better, the advantage of Naive Bayes is emphasized when fewer training examples
-are used. Each average accuracy is calculated by selecting a random training set of size $n$, then selecting a
-random testing set of size 130 from the remaining data, then train and test classifiers accordingly. The average
-accuracy is taken over 10 classification results. Although these results are excellent, we believe one contributing
-factor to such great results can be attributed to a fairly homogeneous data set. We do not have enough variation
-in our data set, so classification is easier. This problem, and how we intend to solve it, will be discussed
-in the future milestones section. Experimental results are shown below.
-
+Using both linear SVM and multinomial Naive Bayes, we achieve excellent accuracy rates, especially compared to current methods discussed in related works. With enough training examples, both methods achieve over 98\% accuracy. Naive Bayes performs marginally better, the advantage of Naive Bayes is emphasized when fewer training examples are used. Each average accuracy is calculated by selecting a random training set of size $n$, then selecting a random testing set of size 130 from the remaining data, then train and test classifiers accordingly. The average accuracy is taken over 10 classification results. Although these results are excellent, we believe one contributing factor to such great results can be attributed to a fairly homogeneous data set. We do not have enough variation in our data set, so classification is easier. This problem, and how we intend to solve it, will be discussed in the future milestones section. Experimental results are shown below.
 
 \begin{table}[hp]
 \caption{Linear SVM Average Accuracy}
@@ -145,16 +136,7 @@ in the future milestones section. Experimental results are shown below.
 \end{table}
 
 \section{Future Milestones}
-One problem with our method we have identified is that the data set we are using is from one log, resulting in a very
-homogenous data set. Within one week from the due date of the progress report, we plan to label at least another 1000-5000 
-buoys, including many more blue and green buoys, and more buoys in varied lighting conditions. We hope that after running
-our algorithms on this data set with variation, we have a more realistic classification accuracy, which will perform better
-during the real application. We also want to try to add a feature which encodes the direction of lighting, to be completed
-within two weeks. One idea we have as an extension to this color classification project is implementing a segmentation 
-algorithm to identify buoy boundaries under unsupervised learning, then do color classification with or current supervised 
-learning algorithms. We are considering an extension to this project as we have achieved excellent results so far, thus
-we don't have much room for further improvement for the rest of the semester. We will discuss what we should pursue as
-a possible extension with the EECS445 staff. 
+One problem with our method we have identified is that the data set we are using is from one log, resulting in a very homogenous data set. Within one week from the due date of the progress report, we plan to label at least another 1000-5000 buoys, including many more blue and green buoys, and more buoys in varied lighting conditions. We hope that after running our algorithms on this data set with variation, we have a more realistic classification accuracy, which will perform better during the real application. We also want to try to add a feature which encodes the direction of lighting, to be completed within two weeks. One idea we have as an extension to this color classification project is implementing a segmentation algorithm to identify buoy boundaries under unsupervised learning, then do color classification with or current supervised learning algorithms. We are considering an extension to this project as we have achieved excellent results so far, thus we don't have much room for further improvement for the rest of the semester. We will discuss what we should pursue as a possible extension with the EECS445 staff. 
  
 
 \section{Conclusion}
