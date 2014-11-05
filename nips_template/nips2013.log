@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  3 NOV 2014 23:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  5 NOV 2014 14:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -156,6 +156,7 @@ File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 3941.
 Package hyperref Info: Hyper figures OFF on input line 4062.
 Package hyperref Info: Link nesting OFF on input line 4067.
 Package hyperref Info: Hyper index ON on input line 4070.
@@ -177,7 +178,7 @@ Package hyperref Info: Hyper figures OFF on input line 5773.
 Package hyperref Info: Link nesting OFF on input line 5778.
 Package hyperref Info: Hyper index ON on input line 5781.
 Package hyperref Info: backreferencing OFF on input line 5788.
-Package hyperref Info: Link coloring OFF on input line 5793.
+Package hyperref Info: Link coloring ON on input line 5791.
 Package hyperref Info: Link coloring with OCG OFF on input line 5798.
 Package hyperref Info: PDF/A mode OFF on input line 5803.
 LaTeX Info: Redefining \ref on input line 5843.
@@ -221,21 +222,21 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 (./nips2013.aux)
 \openout1 = `nips2013.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 42.
  (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -254,7 +255,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks16
 )
-Package hyperref Info: Link coloring OFF on input line 41.
+Package hyperref Info: Link coloring ON on input line 42.
  (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -263,9 +264,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count109
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
 
 (./nips2013.out) (./nips2013.out)
 \@outlinefile=\write3
@@ -288,32 +289,32 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 44.
+(Font)              <7> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 44.
+(Font)              <5> on input line 45.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 44.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 45.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+Underfull \hbox (badness 10000) in paragraph at lines 51--56
 
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 50--55
+Underfull \hbox (badness 10000) in paragraph at lines 51--56
+
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 51--56
 \OT1/ptm/m/n/10 In this pa-per we ex-am-ine the re-sults of var-i-ous su-per-vi
 sed learn-ing tech-niques ap-plied to
  []
@@ -321,13 +322,13 @@ sed learn-ing tech-niques ap-plied to
 <difficult_green.png, id=36, 646.415pt x 483.8075pt>
 File: difficult_green.png Graphic file (type png)
  <use difficult_green.png>
-Package pdftex.def Info: difficult_green.png used on input line 61.
+Package pdftex.def Info: difficult_green.png used on input line 62.
 (pdftex.def)             Requested size: 129.2807pt x 96.75978pt.
 
 <difficult_black.png, id=37, 646.415pt x 483.8075pt>
 File: difficult_black.png Graphic file (type png)
  <use difficult_black.png>
-Package pdftex.def Info: difficult_black.png used on input line 61.
+Package pdftex.def Info: difficult_black.png used on input line 62.
 (pdftex.def)             Requested size: 129.2807pt x 96.75978pt.
 
 
@@ -342,52 +343,57 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <labelling.png, id=47, 646.415pt x 486.81876pt>
 File: labelling.png Graphic file (type png)
  <use labelling.png>
-Package pdftex.def Info: labelling.png used on input line 77.
+Package pdftex.def Info: labelling.png used on input line 78.
 (pdftex.def)             Requested size: 129.2807pt x 97.36201pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--100
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--100
+Underfull \hbox (badness 10000) in paragraph at lines 84--101
 
  []
 
 [2 <./difficult_green.png (PNG copy)> <./difficult_black.png (PNG copy)> <./lab
 elling.png>] [3]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 154.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 169.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 164.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 164.
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+\OT1/pcr/m/n/9 s3 . amazonaws . com / AUVSI / fb9a8da0-[]2ac8-[]42d1-[]a11e-[]d
+58c1e158347 /
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
  (./nips2013.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
 Package rerunfilecheck Info: File `nips2013.out' has not changed.
 (rerunfilecheck)             Checksum: 4AE42197EF78E4F8DA7D1F93FE6397AE;421.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
  ) 
 Here is how much of TeX's memory you used:
- 5640 strings out of 493488
- 82606 string characters out of 3141326
- 171319 words of memory out of 3000000
- 8881 multiletter control sequences out of 15000+200000
- 20391 words of font info for 37 fonts, out of 3000000 for 9000
+ 5651 strings out of 493488
+ 82712 string characters out of 3141326
+ 171334 words of memory out of 3000000
+ 8888 multiletter control sequences out of 15000+200000
+ 19474 words of font info for 41 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,8n,39p,1151b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
 12/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-d
-ist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dist/fonts
-/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw
-/times/utmri8a.pfb>
-Output written on nips2013.pdf (4 pages, 2099985 bytes).
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on nips2013.pdf (4 pages, 2095561 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
  18 named destinations out of 1000 (max. 500000)
  80 words of extra memory for PDF output out of 10000 (max. 10000000)
