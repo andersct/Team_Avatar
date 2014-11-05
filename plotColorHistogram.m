@@ -13,7 +13,13 @@ x = multiple*x;
 y = multiple*y;
 z = multiple*z;
 figure;
-scatter3(x,y,z,scale*hist(linearIndices),[x, y, z]/256);
+scatter3(x,y,z,scale*hist(linearIndices),[x, y, z]/256, 'filled');
+xlabel('R');
+ylabel('G');
+zlabel('B');
+xlim([0, 256]);
+ylim([0, 256]);
+zlim([0, 256]);
 
 end
 
