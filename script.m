@@ -1,5 +1,6 @@
 load('data.mat');
-perm = randperm(830);
+N = numel(train_t);
+perm = randperm(N);
 red_train_t = train_t(perm(1:700));
 test_x = train_x(perm(701:end), :);
 red_test_t = train_t(perm(701:end));
@@ -17,7 +18,7 @@ for i=1:700
    end
 end
 
-for i=1:130
+for i=1:N-700
    if (red_test_t(i) ~= 6)
        red_test_t(i) = -1;
    else
