@@ -1,3 +1,5 @@
+addpath('liblinear-1.94_mac/matlab');  % add LIBLINEAR to the path
+
 load('data.mat');
 N = numel(train_t);
 perm = randperm(N);
@@ -10,7 +12,7 @@ train_x_split = train_x(perm(1:700), :);
 num_in_test = 0;
 num_in_train = 0;
 for i=1:700
-   if (red_train_t(i) ~= 6)
+   if (red_train_t(i) ~= 2)
        red_train_t(i) = -1; 
    else
        red_train_t(i) = 1;
@@ -19,7 +21,7 @@ for i=1:700
 end
 
 for i=1:N-700
-   if (red_test_t(i) ~= 6)
+   if (red_test_t(i) ~= 2)
        red_test_t(i) = -1;
    else
        red_test_t(i) = 1;
