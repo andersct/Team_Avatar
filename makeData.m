@@ -9,4 +9,4 @@ for i=1:length(pictureDataFixed)-1
 end
 
 % save data with compression flag
-save(sprintf('data.mat', '/Users/CyrusAnderson/Documents/Team_Avatar/'),'train_x','train_t','-v7.3');
+save(sprintf('data.mat'),'train_x','train_t','-v7.3');

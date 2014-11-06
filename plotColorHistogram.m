@@ -1,4 +1,4 @@
-function plotColorHistogram(hist)
+function plotColorHistogram(hist, figureHandle, subplotHandle)
 %UNTITLED Summary of this function goes here
 %   hist is an N x N x N matrix
 %   N =< 256
@@ -12,7 +12,9 @@ linearIndices = find(hist ~= 0);
 x = multiple*x;
 y = multiple*y;
 z = multiple*z;
-figure;
+figure(figureHandle);
+subplotHandle;
+warning('off','all')
 scatter3(x,y,z,scale*hist(linearIndices),[x, y, z]/256, 'filled');
 xlabel('R');
 ylabel('G');
