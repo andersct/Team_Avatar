@@ -44,7 +44,7 @@ University of Michigan \\
 \maketitle
 
 \begin{abstract}
-
+In this report, we apply what we have learned in class and present multiple approaches to a common problem: color classification. There are a vast set of approaches that have been made for this problem, from the simple k-nearest neighbors to machine learning SVM. Under various scenarious, some solutions may perform better than others depending on the specific application and its constraints. Here, our objective is to classify color of the buoys on the surface of a lake during an autonomous robotic boat challenge, under variations such as time of day and different weather and lighting conditions. We want the autonomous robotic boat to use our classifier to make decisions during the challenge. This report will compare results from basic non-learning algorithms such as majority-voting and average color, with more sophisticated learning algorithms such as Naive Bayes and multiclass SVM. 
 \end{abstract}
 
 \section{Introduction}
@@ -100,7 +100,16 @@ in a certain section of a photo, or word frequencies of a text document (the cla
 Naive Bayes classifier, which performs very well, as described later.
 
 \section{Related Work}
-// tommy majority vote and average color algorithm performance \\
+We want to compare results from the machine learning algorithms to results from non learning algorithms. This isn't a widespread problem many people are trying to solve, so we could not find specific "state-of-the-art" algorithms, thus we implemented two algorithms we thought made sense in this application, majority vote and average vote.
+
+\subsection{Majority vote}
+Begin by iterating over the feature vector (described earlier in preprocessing), and choose the index with the highest count. Then compute the RGB vector by converting the index in the feature vector to the index in the original histogram, and store this as the most popular color. Compute the Euclidian distance between this RGB vector and the RGB vectors of our 6 colors, and classify the associated buoy as the color which yields the smallest distance.\\
+The result was not as high as we expected, as a lot of the non-black buoys were classified as black because the shadow and water surface included in the picture popularized the count of black/near-black colors in the feature vector. In our 130-size test data, we get an average accuracy of ~21\% over.
+
+\subsection{Average vote}
+Begin by iterating over all the RGB values, construct an RGB vector representing the total weighted sum of the RGB counts in the feature vector. Then find the average RGB value by dividingby the total counts in the feature vector. Compute the Euclideian distance between this RGB vector and the RGB vectore of our 6 colors, and classify the associated buoy as the color which yields the smallest distance.\\
+This result was much better than the majority vote algorithm, but still far from good. This can again be attributed to the mixture of color in the picture boxes. In our 130-size test data, we get an average accuract of ~48\%.
+
 // cyrus other related work
 
 \section{Experimental Results}
