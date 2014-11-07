@@ -3,6 +3,8 @@
 \BOOKMARK [2][-]{subsection.2.1}{Preprocessing}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Classification}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{Related Work}{}% 5
-\BOOKMARK [1][-]{section.4}{Experimental Results}{}% 6
-\BOOKMARK [1][-]{section.5}{Future Milestones}{}% 7
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Majority vote}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Average vote}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Experimental Results}{}% 8
+\BOOKMARK [1][-]{section.5}{Future Milestones}{}% 9
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 10
