@@ -70,9 +70,9 @@ noon sun's lighting \textit{(fig.1 right)}.
 \section{Proposed Method}
 
 \subsection{Preprocessing}
-The robotic boat has two Point Grey Flea 2, 1.3MP cameras that publish images over the robot's Lightweight 
-Communications and Marshalling (LCM) framework at 10Hz. Logging utilities use LCM to capture and store the various messages, and the datasets are crafted from the different logs of the robot's runs.
-Each boat photo we label by hand, marking the color and rectangle around each buoy within about 30 feet from the boat. From each rectangle, we extract the associated color histogram into a 256x256x256 feature vector, where each entry represents the frequency of the RGB color associated with the entry index. We then reduce this feature vector to a vector of size 64x64x64, to make feature vectors less sparse, and to decrease classification time as we are building this for a real time application.
+The robotic boat has two Point Grey Flea 2, 1.3 MP %necessary to include the camera type?
+cameras that publish images over the robot's Lightweight 
+Communications and Marshalling (LCM) framework at 10 Hz. Logging utilities use LCM to capture and store the various messages, and the datasets are crafted from the different logs of the robot's runs. We label each boat photo by hand: marking the color and rectangle around each buoy within about 30 feet from the boat. From each rectangle, we extract the associated color histogram into a $256 \times 256 \times 256$ feature vector; each entry represents the frequency of the RGB color associated with the entry index. We then reduce this feature vector to a vector of size $64 \times 64 \times 64$, to make feature vectors less sparse and to decrease the classification time (since we are building this for a real time application).
 
 \begin{figure}[h]
 \begin{center}
@@ -83,23 +83,12 @@ Each boat photo we label by hand, marking the color and rectangle around each bu
 \end{figure}
 
 \subsection{Classification}
-In this project, we run our training data with multiclass SVM and multinomial Naive Bayes, and have excellent results. \\\\
-We began with SVM beacuse it is a parametric algorithm, thus we do not need to store entire 
+In this project, we run our training data with multiclass SVM and multinomial Naive Bayes, and have excellent results. \\\\ %passive voice pls
+We began with SVM because it is a parametric algorithm, we do not need to store entire 
 training data set to make predictions on the boat. It is also kernelized, which provides us with the flexibility to
 create arbitrarily complex boundaries. SVM prediction can be used to calculate confidence values for the
-decision by taking the distance from the separating hyperplane, which is a useful measurement. SVM does not make any
-assumptions about the underlying distribution of the data. SVM is a very popular algorithm, so it is very good as a baseline
-classification algorithm. We used LIBLINEAR for our SVM classification, which utilizes a one-vs-rest multi-class classification
-scheme [1]. We achieved very good results with LIBLINEAR, as described later, so we decided not to use any kind of SVM 
-kernelization. Using a linear kernel with SVM is preferrable, as it is faster to train and test. Making decisions quickly
-is essential to this application, as we want to classify colors at the same rate photos are captured (10 Hz).\\\\
-We also used Naive Bayes because it is simple to implement, and performs well even on small sets of training data. Like
-SVM, Naive Bayes is parametric, so we do not need to store the entire training data set to make decisions during the
-real time application. A parametric classifier is essential, as it is impractical to store all training data on the boat
-to make decisions in real time. Naive Bayes is also very fast in training and testing, which is ideal for this application.
-The multinomial Naive Bayes classifier works well for classification with discrete features, such as color frequencies of pixels
-in a certain section of a photo, or word frequencies of a text document (the classic application). We used MATLAB's multinomial 
-Naive Bayes classifier, which performs very well, as described later.
+decision by taking the distance from the separating hyperplane, which is a useful measurement. SVM does not make any assumptions about the underlying distribution of the data. SVM is a very popular algorithm, so it is very good as a baseline classification algorithm. We used LIBLINEAR for our SVM classification, which utilizes a one-vs-rest multi-class classification scheme [1]. We achieved very good results with LIBLINEAR, as described later, so we decided not to use any kind of SVM kernelization. Using a linear kernel with SVM is preferrable, as it is faster to train and test. Making decisions quickly is essential to this application, as we want to classify colors at the same rate photos are captured (10 Hz).\\\\
+We also used Naive Bayes because it is simple to implement, and performs well even on small sets of training data. Like SVM, Naive Bayes is parametric, so we do not need to store the entire training data set to make decisions during the real time application. A parametric classifier is essential, as it is impractical to store all training data on the boat to make decisions in real time. Naive Bayes is also very fast in training and testing, which is ideal for this application. The multinomial Naive Bayes classifier works well for classification with discrete features, such as color frequencies of pixels in a certain section of a photo, or word frequencies of a text document (the classic application). We used MATLAB's multinomial Naive Bayes classifier, which performs very well, as described later.
 
 \section{Related Work}
 We want to compare results from the machine learning algorithms to results from non learning algorithms. This isn't a widespread problem many people are trying to solve, so we could not find specific "state-of-the-art" algorithms, thus we implemented two algorithms we thought made sense in this application, majority vote and average vote.
