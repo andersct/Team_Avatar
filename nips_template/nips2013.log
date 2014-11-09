@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2014.9.18)  7 NOV 2014 17:30
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2014.9.18)  7 NOV 2014 17:49
 entering extended mode
  %&-line parsing enabled.
 **nips2013.tex
@@ -202,9 +202,9 @@ File: difficult_green.png Graphic file (type png)
 <difficult_black.png, id=57, 646.415pt x 483.8075pt>
 File: difficult_black.png Graphic file (type png)
  <use difficult_black.png>
-<labelling.png, id=58, 646.415pt x 486.81876pt>
-File: labelling.png Graphic file (type png)
- <use labelling.png>
+<visualization.png, id=58, 1025.431pt x 347.699pt>
+File: visualization.png Graphic file (type png)
+ <use visualization.png>
 Underfull \hbox (badness 10000) in paragraph at lines 84--90
 
  []
@@ -214,8 +214,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--90
 
  []
 
-[2 <./difficult_green.png (PNG copy)> <./difficult_black.png (PNG copy)> <./lab
-elling.png (PNG copy)>]
+[2 <./difficult_green.png (PNG copy)> <./difficult_black.png (PNG copy)> <./vis
+ualization.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
@@ -226,46 +226,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
  []
 
 [3] [4]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.163 ...oadedFiles/RoboBoat_2014_final_rules.pdf}
+                                                  
+? 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 163.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 163.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.163 ...oadedFiles/RoboBoat_2014_final_rules.pdf}
+                                                  
+? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 162--164
-[]\OT1/ptm/m/n/9 [2] AU-VSI-foun-da-tion (2014). 7th RoboBoat Com-pe-ti-tion - 
-Fi-nal Rules. Re-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--164
-\OT1/ptm/m/n/9 trieved from [][]$\OT1/pcr/m/n/9 https : / / higherlogicdownload
- . s3 . amazonaws . com / AUVSI /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--164
-\OT1/pcr/m/n/9 fb9a8da0-[]2ac8-[]42d1-[]a11e-[]d58c1e158347 / UploadedFiles / R
-oboBoat _ 2014 _ final _
+[][]\OT1/ptm/m/n/9 https://higherlogicdownload.s3.amazonaws.com/AUVSI/fb9a8da0-
+2ac8-42d1-a11e-
  []
 
 [5] (./nips2013.aux) ) 
 Here is how much of TeX's memory you used:
- 2765 strings out of 256216
- 38454 string characters out of 1917072
- 98263 words of memory out of 1500000
- 6014 multiletter control sequences out of 10000+200000
- 19474 words of font info for 41 fonts, out of 1200000 for 2000
+ 2761 strings out of 256216
+ 38408 string characters out of 1917072
+ 97202 words of memory out of 1500000
+ 6011 multiletter control sequences out of 10000+200000
+ 18959 words of font info for 39 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  30i,8n,36p,1160b,318s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share
 /texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/
-cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/te
-xmf/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/times/
-utmb8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on nips2013.pdf (5 pages, 1898839 bytes).
+cm/cmmi6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi9.pfb></usr/share/tex
+mf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
+r6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/font
+s/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/urw/courier/ucrr8a.
+pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf/fonts/
+type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
+Output written on nips2013.pdf (5 pages, 1648972 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
+ 131 PDF objects out of 1000 (max. 8388607)
  21 named destinations out of 1000 (max. 131072)
  112 words of extra memory for PDF output out of 10000 (max. 10000000)
 
