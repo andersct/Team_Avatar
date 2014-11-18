@@ -14,7 +14,7 @@ red_test_t = train_t(split+1:end);
 train_x_split = train_x(1:split, :);
 test_x = train_x(split+1:end, :);
 
-isBinaryClassification = true; %edit here for portability
+isBinaryClassification = false; %edit here for portability
 
 
 %% Binary
