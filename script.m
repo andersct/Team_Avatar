@@ -1,18 +1,19 @@
-addpath('liblinear-1.94_mac/matlab');  % add LIBLINEAR to the path
+addpath('liblinear-1.94/matlab');  % add LIBLINEAR to the path
+%addpath('libsvm-3.20/matlab');  % add LIBSVM to the path
 
 load('data.mat');
 N = numel(train_t);
 split = 830;
-% perm = randperm(N);
-% red_train_t = train_t(perm(1:split));
-% test_x = train_x(perm(split+1:end), :);
-% red_test_t = train_t(perm(split+1:end));
-% train_x_split = train_x(perm(1:split), :);
+ perm = randperm(N);
+ red_train_t = train_t(perm(1:split));
+ test_x = train_x(perm(split+1:end), :);
+ red_test_t = train_t(perm(split+1:end));
+ train_x_split = train_x(perm(1:split), :);
 
-red_train_t = train_t(1:split);
-red_test_t = train_t(split+1:end);
-train_x_split = train_x(1:split, :);
-test_x = train_x(split+1:end, :);
+%red_train_t = train_t(1:split);
+%red_test_t = train_t(split+1:end);
+%train_x_split = train_x(1:split, :);
+%test_x = train_x(split+1:end, :);
 
 isBinaryClassification = false; %edit here for portability
 
@@ -65,7 +66,7 @@ end
 classifier = train(red_train_t, sparse(train_x_split));
 % debug
 predict(red_train_t, sparse(train_x_split), classifier);
-[predicted_label, accuracy, ~] = ...
+%[predicted_label, accuracy, ~] = ...
     predict(red_test_t, sparse(test_x), classifier);
 
 
@@ -84,10 +85,10 @@ if isBinaryClassification
         end
     end
     
-    [indices+split, errorType]
+    [indices+split, errorType];
     
 else
-    indices+split
+    indices+split;
 
 end
 
