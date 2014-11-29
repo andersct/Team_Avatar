@@ -1,12 +1,14 @@
 num_buoys = 0;
 
-for k=1:6
+for k=1:7
     if (k==1) load('boxes_michael.mat'); end
     if (k==2) load('boxes_jocelyn0.mat'); end
     if (k==3) load('boxes_jocelyn1.mat'); end
     if (k==4) load('boxes_tommy.mat'); end
     if (k==5) load('boxes_cyrus1.mat'); end
     if (k==6) load('boxes_michael1.mat'); end
+    if (k==7) load('boxes_tommy1.mat'); end
+
         
     for i=1:length(pictureData)
         for j=1:length(pictureData{i,2,:})
@@ -18,13 +20,15 @@ end
 pictureDataFixed = cell(num_buoys, 3);
 ind = 1;
 
-for k=1:6
+for k=1:7
     if (k==1) load('boxes_michael.mat'); end
     if (k==2) load('boxes_jocelyn0.mat'); end
     if (k==3) load('boxes_jocelyn1.mat'); end
     if (k==4) load('boxes_tommy.mat'); end
     if (k==5) load('boxes_cyrus1.mat'); end
     if (k==6) load('boxes_michael1.mat'); end
+    if (k==7) load('boxes_tommy1.mat'); end
+
 
     for i=1:length(pictureData)
        for j=1:length(pictureData{i,2})
