@@ -1,0 +1,2 @@
+green: #20CC16
+white: #FFFFF
