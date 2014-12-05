@@ -39,7 +39,7 @@ def start_rotation(val, axis_tuple, override):
         bpy.ops.transform.rotate(override, value=val, axis=axis_tuple)
 
 # fine-ness of steps (radians)
-ds = 60*pi/180
+ds = 5*pi/180
 
 # cursor to pivot
 #tagPivot = 'Cube';
