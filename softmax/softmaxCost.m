@@ -12,8 +12,13 @@ function [cost, grad] = softmaxCost(theta, numClasses, inputSize, lambda, data, 
 theta = reshape(theta, numClasses, inputSize);
 
 numCases = size(data, 2);
-
-groundTruth = full(sparse(labels, 1:numCases, 1));
+groundTruth = zeros(numClasses,numCases);
+for iter = 1:numCases
+    if labels(iter)~=0
+        groundTruth(labels(iter),iter)=1;
+    end
+end
+%groundTruth = full(sparse(labels, 1:numCases, 1));
 cost = 0;
 
 thetagrad = zeros(numClasses, inputSize);
