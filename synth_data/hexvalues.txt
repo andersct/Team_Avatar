@@ -1,2 +1,3 @@
 green: #20CC16
 white: #FFFFF
+red: #FF170C
