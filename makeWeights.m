@@ -1,10 +1,10 @@
-weight_vec = zeros(2074,1);
+weight_vec = zeros(2074+7114,1);
 
-for i=1:830
+for i=1:2074
     weight_vec(i) = 1;
 end
-for i=831:2074
-    weight_vec(i) = 0.01;
+for i=2075:9188
+    weight_vec(i) = 0.2;
 end
 
-save(sprintf('svmweights.mat'),'weight_vec','-v7.3');
+save(sprintf('svmweights_synth.mat'),'weight_vec_synth','-v7.3');
