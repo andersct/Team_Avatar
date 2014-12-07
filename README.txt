@@ -22,11 +22,11 @@ Advanced Algorithms:
 // Data trained/ tested on
 // Accuracy
 
-+ LIBLINEAR SVM (liblinear-1.94)
++ LIBLINEAR SVM with/without kernels (liblinear-1.94)
 // Data trained/ tested on
 // Accuracy
 
-+ LIBSVM (libsvm-3.20_mac)
++ LIBSVM (libsvm-3.20_mac) (for weighting synthetic data)
 // Data trained/ tested on
 // Accuracy
 
