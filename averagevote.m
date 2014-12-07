@@ -1,10 +1,11 @@
 clear;
 load('data.mat');
-perm = randperm(830);
-train_t_split = train_t(perm(1:700));
-train_x_split = train_x(perm(1:700),:);
-test_x_split = train_x(perm(701:end),:);
-test_t_split = train_t(perm(701:end));
+perm = randperm(2074);
+split = 1500;
+train_t_split = train_t(perm(1:split));
+train_x_split = train_x(perm(1:split),:);
+test_x_split = train_x(perm(split:end),:);
+test_t_split = train_t(perm(split:end));
 a = zeros(3,1);
 color = zeros(6,3);
 color(1,:) = [64,1,1];
@@ -14,8 +15,9 @@ color(4,:) = [1,1,64];
 color(5,:) = [64,64,1];
 color(6,:) = [1,1,1];
 cor = 0;
-rescolor = zeros(130,1);
-for i=1:130
+[s,k] = size(test_t_split);
+rescolor = zeros(s,1);
+for i=1:s
     [x,y] = max(test_x_split(i,:));
     ind = 1;
     a = zeros(3,1);
@@ -40,4 +42,4 @@ for i=1:130
         cor = cor+1;
     end;
 end;
-cor/130
+cor/s

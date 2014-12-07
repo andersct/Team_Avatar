@@ -1,10 +1,11 @@
 clear;
 load('data.mat');
-perm = randperm(830);
-train_t_split = train_t(perm(1:700));
-train_x_split = train_x(perm(1:700),:);
-test_x_split = train_x(perm(701:end),:);
-test_t_split = train_t(perm(701:end));
+perm = randperm(2074);
+split = 1500;
+train_t_split = train_t(perm(1:split));
+train_x_split = train_x(perm(1:split),:);
+test_x_split = train_x(perm(split:end),:);
+test_t_split = train_t(perm(split:end));
 a = zeros(3,1);
 color = zeros(6,3);
 color(1,:) = [63,0,0]; %red
@@ -16,7 +17,8 @@ color(6,:) = [0,0,0];
 cor = 0;
 resrgb = zeros(130,3);
 rescolor = zeros(130,1);
-for i=1:130
+[s,k] = size(test_x_split);
+for i=1:s
     [x,y] = max(test_x_split(i,:));
     a(1) = y/(64*64);
     a(2) = mod(y,(64*64)) / 64;

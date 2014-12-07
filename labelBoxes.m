@@ -2,8 +2,8 @@
 
 figure;
 
-dataDir = '/afs/umich.edu/user/a/n/andersct/Private/uma-color/';%'/afs/umich.edu/user/a/n/andersct/Public/difficult_buoy/'; %pwd + /
-saveDir = '/afs/umich.edu/user/a/n/andersct/Private/uma-color/';
+dataDir = '/Users/nghiavo/Team_Avatar/new_pics/tommy_pics/third300/';%'/afs/umich.edu/user/a/n/andersct/Public/difficult_buoy/'; %pwd + /
+saveDir = '/Users/nghiavo/Team_Avatar/new_pics/tommy_pics/third300/';
 pics = dir(sprintf('%s*.png',dataDir));
 numPics = length(pics);
 pictureData = cell(numPics, 2);
