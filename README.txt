@@ -18,7 +18,7 @@ Basic Algorithms:
 // Accuracy
 
 Advanced Algorithms:
-+ Naives Bayes (nb_script)
++ Naives Bayes (nb_script.m)
 // Data trained/ tested on
 // Accuracy
 
@@ -26,7 +26,11 @@ Advanced Algorithms:
 // Data trained/ tested on
 // Accuracy
 
-+ LIBSVM (libsvm-3.20_mac) (for weighting synthetic data)
++ LIBSVM (libsvm-3.20) (for weighting synthetic data)
+// Data trained/ tested on
+// Accuracy
+
++ Softmax Regression (softmax_regression.m)
 // Data trained/ tested on
 // Accuracy
 
