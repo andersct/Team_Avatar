@@ -18,6 +18,7 @@ Red. Green. Blue. Yellow. Black. White. Long ago, the seven colors lived togethe
 
 ## Algorithms Implemented
 * Basic Algorithms:
+
 	* Majority Vote (/majorityvote.m)
 		* Data trained/ tested on
 		* Accuracy
@@ -27,6 +28,7 @@ Red. Green. Blue. Yellow. Black. White. Long ago, the seven colors lived togethe
 		* Accuracy
 
 * Advanced Algorithms:
+
 	* Naives Bayes (nb_script.m)
 		* Data trained/ tested on
 		* Accuracy
