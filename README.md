@@ -6,43 +6,44 @@ Red. Green. Blue. Yellow. Black. White. Long ago, the seven colors lived togethe
 
 ## Introduction
 
+We present multiple supervised learning approaches to a common problem: color classification. From the simple k-nearest neighbors to machine learning SVM, there are a variety of approaches to this problem. Some solutions may perform better than others depending on the specific application and constraints. Here, our objective is to classify the colors of buoys on the surface of a pond during an autonomous robotic boat challenge under variations (e.g. time of day, weather, and lighting conditions). Our aim is to allow the autonomous robotic boat to use our classifier to make color classifications during the challenge. This report will compare results from basic non-learning algorithms such as majority-voting and average color, with more sophisticated learning algorithms such as Naive Bayes and multiclass SVM. 
+
 ## Instructions
 
 1. ????
 2. Profit
 
-## Data-Collected
+## How Data was Created
 
-* Collecting-data-from-images files: (colorBoxes, confirmBox, labelBoxes)
-* Data-managing files: (histogram.m, makeData.m, visualize.m, makeSyntheticData.m)
+1. Retreived buoy images from autonomous boat log files:
+2. Used 'labelBoxes.m' to hand-label buoys
+3. Used 'makeData.m' for standarizing and extracting features from the hand-labeled data
+4. Used Blender to render artifical data
+5. Then used 'makeSyntheticData.m' to standarize and extract features from the synthetic data
 
 ## Algorithms Implemented
 * Basic Algorithms:
 
 	* Majority Vote (/majorityvote.m)
-		* Data trained/ tested on
-		* Accuracy
+		* Accuracy:
 
 	* Average vote  (/averagevote.m)
-		* Data trained/ test on
-		* Accuracy
+		* Accuracy:
 
 * Advanced Algorithms:
 
 	* Naives Bayes (nb_script.m)
-		* Data trained/ tested on
-		* Accuracy
+		* Accuracy:
 
 	* LIBLINEAR SVM with/without kernels (liblinear-1.94)
 		* Data trained/ tested on
-		* Accuracy
+		* Accuracy:
 
 	* LIBSVM (libsvm-3.20) (for weighting synthetic data)
 		* Data trained/ tested on
-		* Accuracy
+		* Accuracy:
 
 	* Softmax Regression (softmax_regression.m)
-		* Data trained/ tested on
-		* Accuracy
+		* Accuracy:
 
 ## Testing
