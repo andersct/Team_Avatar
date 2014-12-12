@@ -17,7 +17,7 @@ Red. Green. Blue. Yellow. Black. White. Long ago, the seven colors lived togethe
 * Data-managing files: (histogram.m, makeData.m, visualize.m, makeSyntheticData.m)
 
 ## Algorithms Implemented
-*Basic Algorithms:
+* Basic Algorithms:
 	* Majority Vote (/majorityvote.m)
 		* Data trained/ tested on
 		* Accuracy
@@ -26,7 +26,7 @@ Red. Green. Blue. Yellow. Black. White. Long ago, the seven colors lived togethe
 		* Data trained/ test on
 		* Accuracy
 
-*Advanced Algorithms:
+* Advanced Algorithms:
 	* Naives Bayes (nb_script.m)
 		* Data trained/ tested on
 		* Accuracy
