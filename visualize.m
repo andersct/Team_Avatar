@@ -1,8 +1,9 @@
-function visualize( pictureDataFixed, index )
+function visualize( pictureDataFixed, index , binSize )
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
 
-[hist_mat, ~] = histogram(pictureDataFixed{index,1}, pictureDataFixed{index,3});
+[hist_mat, ~] = histogram(pictureDataFixed{index,1}, ...
+    pictureDataFixed{index,3} , binSize);
 visPlot = figure;
 subVisPlot = subplot(1,2,1);
 plotColorHistogram(hist_mat, visPlot, subVisPlot);
