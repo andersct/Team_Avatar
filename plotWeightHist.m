@@ -1,6 +1,4 @@
 function plotWeightHist(w, binsPerSide, visPlot, subVisPlot)
-% 1x4096 : 16^3 bins
-
 % undoes vectorization of histogram.m
 % over i,j,k : hist_vec(ind) = hist_mat(i,j,k)
 
@@ -8,8 +6,7 @@ function plotWeightHist(w, binsPerSide, visPlot, subVisPlot)
 load 'train_x_un_stats.mat';
 
 w = w.*sqrt(vars);
-%w = w + means;
-w = abs(w)*1000;
+w = w*1000;
 
 hist_mat = zeros(binsPerSide,binsPerSide,binsPerSide);
 ind = 1;
