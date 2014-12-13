@@ -37,5 +37,5 @@ synth_train_x = bsxfun(@rdivide, synth_train_x, var.^0.5);
 synth_train_x(isnan(synth_train_x)) = 0;
 
 
-save(sprintf('data.mat'),'train_x','train_t','-v7.3');
+save(sprintf('datasvm.mat'),'train_x','train_t','-v7.3');
 save(sprintf('synthData.mat'),'synth_train_x','synth_train_t','-v7.3');
