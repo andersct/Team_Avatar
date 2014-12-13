@@ -6,8 +6,8 @@ addpath('libsvm-3.20/libsvm-weights-3.18/matlab');  % add LIBSVM to the path
 %addpath('libsvm-3.20_mac/libsvm-weights-3.18/matlab');  % add LIBSVM to the path
 
 
-load('datasvm.mat');
-load('synthData.mat');
+load('datasvm_16.mat');
+load('synthData_16.mat');
 N = length(train_t);
 perm = randperm(N);
 split = 1400;

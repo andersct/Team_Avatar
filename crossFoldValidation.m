@@ -1,8 +1,8 @@
 addpath('libsvm-3.20/matlab');  % add LIBSVM to the path
 addpath('libsvm-3.20/libsvm-weights-3.18/matlab');  % add LIBSVM to the path
 
-load('datasvm.mat');
-load('synthData.mat');
+load('datasvm_16.mat');
+load('synthData_16.mat');
 gamma = [0.00013, 0.00014, 0.00015, .00016, 0.00017, 0.00018, 0.00019];
 weights = [0, 0.001, 0.01, 0.1, 0.2, 0.5];
 best_g = 0.00013;
