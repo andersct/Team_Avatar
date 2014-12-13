@@ -32,7 +32,7 @@ for g=1:length(gamma)
         train_t_split = [train_t_block1; train_t_block2; train_t_block3; synth_train_t];
 
         num_in_train = length(train_t_block1) + length(train_t_block2) + length(train_t_block3);
-        weight_vec = [ones(num_in_train,1); weights(w)*ones(7114,1)];
+        weight_vec = [ones(num_in_train,1); weights(w)*ones(length(synth_train_t),1)];
 
         params = ['-t 3 -h 0 -g ', num2str(gamma(g))];
         classifier = svmtrain(weight_vec, train_t_split, sparse(train_x_split), params);
@@ -77,7 +77,7 @@ best_w
 train_x_split = [train_x_block1; train_x_block2; train_x_block3; train_x_block4; synth_train_x];
 train_t_split = [train_t_block1; train_t_block2; train_t_block3; train_t_block4; synth_train_t];
 num_in_train = length(train_t_block1) + length(train_t_block2) + length(train_t_block3) + length(train_t_block4);
-weight_vec = [ones(num_in_train,1); best_w*ones(7114,1)];
+weight_vec = [ones(num_in_train,1); best_w*ones(length(synth_train_t),1)];
 params = ['-t 3 -h 0 -g ', num2str(best_g)];
 classifier = svmtrain(weight_vec, train_t_split, sparse(train_x_split), params);
 [predicted_label, accuracy, ~] = svmpredict(train_t_block5, sparse(train_x_block5), classifier);

@@ -35,7 +35,7 @@ red_train_t = [train_t_block1; train_t_block2; train_t_block3; train_t_block5];
 [num_in_train,~] = size(train_x_split);
 weight_vec = ones(length(train_x_split),1);
 % comment this line to remove synthetic data
-weight_vec = [ones(num_in_train,1); 0.2*ones(7114,1)];
+weight_vec = [ones(num_in_train,1); 0.2*ones(length(synth_train_t),1)];
 
 test_x = train_x_block4;
 red_test_t = train_t_block4;
