@@ -7,7 +7,8 @@ N = size(hist,1);
 multiple = 256/N;
 scale = 100;
 
-linearIndices = find(hist ~= 0);
+% positive values as normal colors
+linearIndices = find(hist > 0);
 [x, y, z] = ind2sub([N, N, N], linearIndices);
 x = multiple*x;
 y = multiple*y;
@@ -16,6 +17,20 @@ figure(figureHandle);
 subplotHandle;
 warning('off','all')
 scatter3(x,y,z,scale*hist(linearIndices),[x, y, z]/256, 'filled');
+hold on;
+
+% negative values as inverse
+linearIndices = find(hist < 0);
+[x, y, z] = ind2sub([N, N, N], linearIndices);
+x = multiple*x;
+y = multiple*y;
+z = multiple*z;
+figure(figureHandle);
+subplotHandle;
+warning('off','all')
+scatter3(x,y,z,scale*-hist(linearIndices),1-[x, y, z]/256, 'filled');
+hold off;
+
 xlabel('R');
 ylabel('G');
 zlabel('B');
