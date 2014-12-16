@@ -1,4 +1,4 @@
-function [ hist_mat, hist_vec ] = histogram( pts, file, binSize)
+function [ hist_mat, hist_vec ] = histogram( pts, file, binSize, normFcn)
 %UNTITLED4 Summary of this function goes here
 %   Detailed explanation goes here
     hist_mat = zeros(binSize,binSize,binSize);
@@ -8,6 +8,9 @@ function [ hist_mat, hist_vec ] = histogram( pts, file, binSize)
     y_min = min(pts(1,2), pts(2,2));
     y_max = max(pts(1,2), pts(2,2));
     A = imread(file);
+    if nargin < 4
+        A = normFcn(A);
+    end
     for i=x_min:x_max
        for j=y_min:y_max
            RGB = A(int64(j),int64(i),:);
