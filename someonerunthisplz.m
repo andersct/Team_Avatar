@@ -39,4 +39,4 @@ synth_train_x(isnan(synth_train_x)) = 0;
 %}
 
 save(sprintf('dataChannelnb.mat'),'train_x','train_t','-v7.3');
-save(sprintf('synthPixelData_nb.mat'),'synth_train_x','synth_train_t','-v7.3');
+save(sprintf('synthChannelData_nb.mat'),'synth_train_x','synth_train_t','-v7.3');
