@@ -149,6 +149,14 @@ One problem with our method so far is that most of the data is from one log, res
 % // michael do conclusion [done]
 Our group's aim is to correctly detect the colors of buoys in pictures. In building a fast and robust algorithm to determine color under a variety of conditions, the robotic boat can use color as a trusted attribute to make higher level route planning decisions. We hope that this will enable the boat to perform well. So far, we have only trained and tested using multiclass SVM and multinomial Naive Bayes. As of now, the results have been accurate. We surmise that this accuracy results from our overlapping data. The majority of our data overlaps because we obtained our data from a single recording log.  Next, we aim to obtain a less homogenous data set by retrieving more data from other recording logs and performing error analysis with the new data. We are also aiming to add a feature that accounts the direction of lighting by the sun.
 
+\section{Future Directions}
+
+
+
+\section{Synthetic Data}
+
+In order to augment the coverage of the original data set we generated images using Blender, a free open source 3D modeling software. These images were created to ensure that the various positions of the sun in the sky were represented in the training set. To this end we used the Cycles rendering engine built in to Blender for realistic images, including a plastic surface for buoys and mirror effect for water. We also used Blender's simulation tools to replicate the water conditions such as ripple size, frequency, and variation. Each of these effects was compared to that found in real images for consistency across the real and synthetic data sets. After creating the simulated scene, we saved the images rendered while varying the sun's location allowing the capture of shadows from each angle. We rendered 1400 images for each color of buoy, resulting in a 
+
 \subsubsection*{References}
 
 %// michael do references
