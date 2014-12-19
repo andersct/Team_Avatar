@@ -116,32 +116,29 @@ The accuracy for average vote over our real data set is 35.7\%. This can again b
 % include photos for misclassified buoys
 Using both linear SVM and multinomial Naive Bayes, we achieve high accuracy rates (compared to baseline methods discussed in related works). With a sufficient number of training examples, both methods achieve over 98\% accuracy. Naive Bayes performs marginally better, and the advantage of Naive Bayes is emphasized when fewer training examples are used. Each average accuracy is calculated by selecting a random training set of size $n$, then selecting a random testing set of size 130 from the remaining data, and finally train and test classifiers accordingly. The average accuracy is taken over 10 classification results. Although these accuracies are high, we believe one contributing factor can be attributed to a fairly homogeneous data set. We do not have enough variation in our data set, so classification is easier. This problem, and how we intend to solve it, will be discussed in the future milestones section. Experimental results are shown below.
 
-\begin{table}[hp]
-\caption{Linear SVM Average Accuracy}
-\begin{center}
-\begin{tabular}{c|c}
-{\bf EXAMPLES}  &{\bf ACCURACY}
-\\ \hline
-50              &89.08 \\
-100             &93.77 \\
-200             &96.92 \\
-400             &97.85 \\
-700             &98.38 \\
-\end{tabular}
-\end{center}
-\end{table}
 
-\begin{table}[hp]
-\caption{Multinomial Naive Bayes Average Accuracy}
+\begin{table}
+\caption{Experimental Results}
 \begin{center}
-\begin{tabular}{c|c}
-{\bf EXAMPLES}  &{\bf ACCURACY}
-\\ \hline 
-50              &92.85 \\
-100             &96.54 \\
-200             &97.31 \\
-400             &98.38 \\
-700             &98.31 \\
+\begin{tabular}{l|c|c|c|c|c}
+& Channel   & Pixel  &    &   &   \\
+& preprocessed & preprocessed & Unprocessed & Real & Synthetic \\
+& Synthetic data & Synthetic data & Synthetic data &  data  &  data \\
+& and Real data  & and Real data & and Real data & only & only \\
+\hline 
+Naive & train: & train: & train: & train: & train: \\
+Bayes & test: & test: & test: & test: & test: \\
+\hline
+Linear kernel SVM & train: & train: & train: & train: & train: \\
+with optimized & test: & test: & test: & test: & test: \\
+hyperparameters  & & & & & \\
+\hline
+RBF kernel SVM & train: & train: & train: & train: & train: \\
+with optimized& test: & test: & test: & test: & test: \\
+ hyperparameters & & & & & \\
+\hline
+Softmax & train: & train: & train: & train: & train: \\
+ Regression & test: & test: & test: & test: & test: \\
 \end{tabular}
 \end{center}
 \end{table}
@@ -195,7 +192,7 @@ In order to augment the coverage of the original data set we generated images us
 
 [9] Zhang H. \& Zhao D. (2004). Spatial Histogram Features for Face Detection in Color Images, {\it PCM'04 Proceedings of the 5th Pacific Rim conference on Advances in Multimedia Information Processing} 1(1), 377-384 
 
-[1a] Fulkerson, B., \& Soatto, S. (2012). Really quick shift: Image segmentation on a GPU. In Trends and Topics in Computer Vision (pp. 350-358). Springer Berlin Heidelberg.
+[1a] Fulkerson, B. \& Soatto, S. (2012). Really quick shift: Image segmentation on a GPU. In Trends and Topics in Computer Vision (pp. 350-358). Springer Berlin Heidelberg.
 
 [1b] Skarbek, W., Koschan, A., Bericht, T., \& Veroffentlichung, Z. (1994). Colour image segmentation-a survey.
 
