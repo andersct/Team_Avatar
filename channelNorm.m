@@ -4,9 +4,10 @@ function [ im ] = channelNorm( im )
 % bottom 25% corresponds to [.75, 1]*M
 
 [M, N, ~] = size(im);
+%im = double(im);
 
 % Find sums for each RGB channel
-channels = zeros(3,1);
+channels = uint8(zeros(3,1));
 for i=floor(.75*M):M
     for j=1:N
         channels = channels + squeeze(im(i,j,:));
