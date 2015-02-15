@@ -1,7 +1,7 @@
 addpath('softmax/');
 
-load('datasvm_16.mat');
-load('synthData_16.mat');
+load('datasvm.mat');
+load('synthData.mat');
 
 N = length(train_t);
 
@@ -20,31 +20,31 @@ train_t_block5 = train_t(789:1200);
 %
 % without synthetic data : to cross validate, switch out each block as test,
 % run 5 times
-% new_train_x = [train_x_block2; train_x_block3; train_x_block4; train_x_block5];
-% new_train_t = [train_t_block2; train_t_block3; train_t_block4; train_t_block5];
+% new_train_x = [train_x_block1; train_x_block3; train_x_block4; train_x_block5];
+% new_train_t = [train_t_block1; train_t_block3; train_t_block4; train_t_block5];
+% 
+% new_test_x = train_x_block2;
+% new_test_t = train_t_block2;
+%}
+
+%
+%with synthetic data
+% 
+% new_train_x = [synth_train_x; ...
+%             train_x_block2; train_x_block3; train_x_block4; train_x_block5];
+% new_train_t = [synth_train_t; ...
+%             train_t_block2; train_t_block3; train_t_block4; train_t_block5];
 % 
 % new_test_x = train_x_block1;
 % new_test_t = train_t_block1;
 %}
 
-%
-%with synthetic data
-
-new_train_x = [synth_train_x; ...
-            train_x_block2; train_x_block3; train_x_block4; train_x_block5];
-new_train_t = [synth_train_t; ...
-            train_t_block2; train_t_block3; train_t_block4; train_t_block5];
-
-new_test_x = train_x_block1;
-new_test_t = train_t_block1;
-%}
-
 
 % synth train
-% new_train_x = synth_train_x;
-% new_train_t = synth_train_t;
-% new_test_x = train_x;
-% new_test_t = train_t;
+new_train_x = synth_train_x;
+new_train_t = synth_train_t;
+new_test_x = train_x;
+new_test_t = train_t;
 %}
 
 lambda = 1e-4;
@@ -69,6 +69,7 @@ new_test_x = new_test_x';
 [pred] = softmaxPredict(softmaxModel, new_train_x);
 fprintf('Train Accuracy: %f%%\n', 100*mean(pred(:) == new_train_t(:)));
 
+tic;
 [pred] = softmaxPredict(softmaxModel, new_test_x);
 fprintf('Test Accuracy: %f%%\n', 100*mean(pred(:) == new_test_t(:)));
-
+toc;

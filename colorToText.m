@@ -15,6 +15,8 @@ switch num
         out = 'yellow';
     case {6}
         out = 'black';
+    case {7}
+        out = 'negative';
     otherwise
         disp('bad label');
 end

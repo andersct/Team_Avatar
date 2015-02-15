@@ -1,0 +1,101 @@
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1413757655320.png 3 518 331 48 47 491 268 21 23 542 265 20 20
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1413757659320.png 1 236 314 39 42
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1413757667104.png 3 179 311 39 42 214 254 24 19 268 253 14 16
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1413757712584.png 2 286 268 14 21 559 274 16 20
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197382703.png 1 312 320 105 94
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197382991.png 1 389 325 106 109
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197496767.png 1 100 301 45 37
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197497447.png 2 426 259 21 19 281 247 14 12
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197498543.png 2 544 247 17 14 222 222 7 8
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197500151.png 2 204 312 35 34 30 272 17 15
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197500503.png 2 186 290 35 35 16 245 16 16
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197500919.png 2 142 302 33 31 433 268 15 11
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197501351.png 2 150 285 29 36 443 249 13 13
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197502015.png 2 353 312 32 35 159 267 21 17
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197502439.png 2 186 247 13 17 529 309 36 31
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197502919.png 3 465 221 10 9 332 244 13 15 480 249 16 17
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197510295.png 3 455 279 28 26 534 258 14 14 303 250 12 11
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197510855.png 2 416 280 27 27 512 263 15 17
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197511311.png 2 378 277 26 23 486 262 10 14
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197511895.png 2 315 265 23 21 430 253 13 13
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197512343.png 2 305 266 23 25 426 257 13 13
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197512767.png 2 329 268 22 19 452 260 13 13
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197513271.png 2 352 272 18 18 479 263 10 13
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197513799.png 2 370 266 14 15 494 259 17 12
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197516775.png 2 172 247 15 13 507 263 19 15
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197517252.png 2 586 306 36 37 424 251 20 22
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197517799.png 2 501 307 37 35 375 258 19 16
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197518207.png 2 375 263 19 21 473 312 39 29
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197518671.png 2 451 299 35 40 375 262 20 16
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197519144.png 2 421 294 28 30 368 257 18 18
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197519599.png 2 394 288 26 31 359 258 17 15
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197520103.png 2 375 288 25 26 359 260 14 16
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197520551.png 2 363 281 25 27 364 257 15 15
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197520983.png 2 355 281 24 26 363 256 16 15
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197521408.png 2 338 279 28 23 358 257 14 14
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197521807.png 2 314 287 26 25 340 265 16 11
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197522295.png 2 291 269 20 23 595 274 17 19
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197522759.png 2 261 266 25 19 557 273 22 17
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197523191.png 2 267 256 19 19 557 271 21 18
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197523599.png 2 278 266 20 22 559 275 18 21
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197524032.png 3 287 271 16 16 554 275 18 22 337 251 10 14
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197524455.png 3 261 266 15 15 315 251 14 14 521 272 16 19
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197524799.png 3 477 267 18 16 222 263 17 18 281 244 14 19
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197526599.png 2 189 254 20 18 511 298 35 27
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197526983.png 2 533 301 29 25 229 258 17 17
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197533279.png 2 456 347 134 127 341 274 18 17
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197533863.png 2 365 321 110 120 339 269 16 18
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197534511.png 2 271 301 104 94 573 271 45 45
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197535103.png 2 233 297 83 76 539 280 47 37
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197535599.png 2 197 285 70 77 500 271 51 42
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197536151.png 2 108 264 59 72 406 251 42 46
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197536654.png 2 66 265 53 52 350 257 39 45
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197538415.png 3 22 255 44 37 251 254 32 25 521 256 23 23
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197538887.png 3 39 249 35 40 253 253 38 31 515 258 33 29
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197539319.png 3 38 250 33 35 244 250 29 27 497 258 27 22
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197539711.png 4 29 248 29 32 225 249 33 27 476 252 30 24 623 251 17 17
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197540143.png 4 19 246 34 30 206 246 27 24 447 251 24 26 594 252 25 19
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197540536.png 4 6 240 26 29 181 245 26 20 419 251 26 25 573 252 19 17
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197540927.png 3 156 242 31 27 388 248 28 22 543 247 20 17
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197541327.png 3 142 241 26 22 362 245 30 30 519 241 21 19
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197554503.png 2 330 155 102 210 537 196 36 108
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197555039.png 2 287 154 92 184 508 192 36 108
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197555519.png 2 242 168 86 166 471 199 41 97
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197556015.png 2 241 167 75 150 464 199 41 93
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197556487.png 2 222 177 64 130 445 199 38 91
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197556895.png 2 228 174 64 130 444 197 48 85
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197557343.png 2 261 188 58 120 479 212 25 80
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197557783.png 2 277 190 58 111 489 209 33 81
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197558247.png 2 278 191 49 117 481 208 30 73
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197558687.png 2 229 186 42 99 430 202 33 73
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197559135.png 2 179 184 43 94 384 196 29 73
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197559559.png 2 125 186 42 94 320 199 36 75
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197559935.png 2 100 192 47 86 293 200 37 74
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197560263.png 2 86 191 44 86 280 204 33 70
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197560607.png 2 77 185 37 91 271 199 25 69
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197560951.png 2 75 198 35 80 249 206 35 64
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197561311.png 2 74 196 36 76 253 200 27 74
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197561679.png 2 80 193 26 75 253 209 21 60
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197562023.png 2 88 197 39 79 259 210 24 61
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197562606.png 2 91 196 25 72 252 203 23 60
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197562967.png 2 89 200 30 67 247 209 25 60
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197563399.png 2 91 203 27 60 249 210 18 49
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197563919.png 2 93 202 30 61 242 210 24 57
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197564423.png 2 88 202 36 52 241 208 24 66
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197564887.png 2 95 205 26 57 236 209 21 48
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197565415.png 2 89 205 24 55 230 215 25 37
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197565887.png 2 82 208 25 55 213 208 31 52
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197566439.png 2 65 204 29 52 188 208 35 52
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197568575.png 2 63 205 10 49 174 211 19 39
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197571575.png 2 110 118 101 241 558 192 41 128
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197572175.png 2 12 126 113 221 464 179 52 138
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197573287.png 2 278 182 32 117 523 211 23 67
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197573815.png 2 254 191 25 99 501 210 17 62
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197574279.png 2 277 202 37 103 523 219 16 55
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197575423.png 2 155 193 56 112 463 221 30 82
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197575968.png 2 231 192 61 92 535 209 20 79
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197576527.png 2 218 182 55 91 509 200 25 80
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197577136.png 2 160 193 54 95 438 205 27 81
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197577991.png 3 55 193 48 86 314 198 24 79 568 209 20 55
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197578815.png 3 23 196 37 78 263 208 24 62 515 218 16 45
+/Users/CyrusAnderson/Documents/Team_Avatar/pics/1414197579879.png 3 26 197 47 69 249 208 20 69 495 222 17 48

@@ -40,40 +40,40 @@ for i=1:length(greenPics)
 end
 
 for i=1:length(whitePics)
-      synthPicsData{ind,1}(1:2,1) = [1,1];
-      synthPicsData{ind,1}(1:2,2) = [100,100];
+      synthPicsData{ind,1}(1:2,1) = [1,100];
+      synthPicsData{ind,1}(1:2,2) = [1,100];
       synthPicsData{ind,2} = 3;
       synthPicsData{ind,3} = [white, whitePics(i).name];
       ind = ind + 1;
 end
 
 for i=1:1400
-      synthPicsData{ind,1}(1:2,1) = [1,1];
-      synthPicsData{ind,1}(1:2,2) = [100,100];
+      synthPicsData{ind,1}(1:2,1) = [1,100];
+      synthPicsData{ind,1}(1:2,2) = [1,100];
       synthPicsData{ind,2} = 1;
       synthPicsData{ind,3} = [red, redPics(i).name];
       ind = ind + 1;
 end
 
 for i=1:length(blackPics)
-      synthPicsData{ind,1}(1:2,1) = [1,1];
-      synthPicsData{ind,1}(1:2,2) = [100,100];
+      synthPicsData{ind,1}(1:2,1) = [1,100];
+      synthPicsData{ind,1}(1:2,2) = [1,100];
       synthPicsData{ind,2} = 6;
       synthPicsData{ind,3} = [black, blackPics(i).name];
       ind = ind + 1;
 end
 
 for i=1:length(bluePics)
-      synthPicsData{ind,1}(1:2,1) = [1,1];
-      synthPicsData{ind,1}(1:2,2) = [100,100];
+      synthPicsData{ind,1}(1:2,1) = [1,100];
+      synthPicsData{ind,1}(1:2,2) = [1,100];
       synthPicsData{ind,2} = 4;
       synthPicsData{ind,3} = [blue, bluePics(i).name];
       ind = ind + 1;
 end
 
 for i=1:length(yellowPics)
-      synthPicsData{ind,1}(1:2,1) = [1,1];
-      synthPicsData{ind,1}(1:2,2) = [100,100];
+      synthPicsData{ind,1}(1:2,1) = [1,100];
+      synthPicsData{ind,1}(1:2,2) = [1,100];
       synthPicsData{ind,2} = 5;
       synthPicsData{ind,3} = [yellow, yellowPics(i).name];
       ind = ind + 1;
