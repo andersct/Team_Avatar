@@ -1,5 +1,5 @@
 function haarTrainingFormat(pictureData, dataDir, savePath)
-%haarTrainingFormat Summary of this function goes here
+%haarTrainingFormat converts labeled boxes to haarTraining positive format
 %   pictureData
 %   pictureData{i,1} = [x column, y column]
 %   pictureData{i,2} = label vector
