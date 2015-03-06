@@ -2,15 +2,17 @@
 
 figure;
 
-dataDir = '/Users/CyrusAnderson/Documents/Team_Avatar/new_pics/tommy_pics/second200/';%'/afs/umich.edu/user/a/n/andersct/Public/difficult_buoy/'; %pwd + /
-saveDir = '/Users/CyrusAnderson/Documents/Team_Avatar/Negatives/HaarTraining/newpics-tommypics-second200/';
+dataDir = '/Users/CyrusAnderson/Documents/Team_Avatar/new_pics/tommy_pics/third300/';%'/afs/umich.edu/user/a/n/andersct/Public/difficult_buoy/'; %pwd + /
+saveDir = '/Users/CyrusAnderson/Documents/Team_Avatar/Negatives/HaarTraining/';
 pics = dir(sprintf('%s*.png',dataDir));
 numPics = length(pics);
+%numPics = 450; %set this to break into small segments
 pictureData = cell(numPics, 2);
 
 
-
+%set i's start value if breaking into small segments
 for i=1:numPics
+    i
     name =  pics(i).name;
     imshow([dataDir, name]);
     
@@ -33,7 +35,7 @@ for i=1:numPics
         h(3) = plot([x(1), x(2)], [y(1), y(1)], 'Color', [r, g, b], 'LineWidth', 2);
         h(4) = plot([x(1), x(2)], [y(2), y(2)], 'Color', [r, g, b], 'LineWidth', 2);
         
-        if confirmBox == 'y'
+        if confirmAction() == 'y'
             % save
             pictureData{i,1}(2*numBoxCounter-1:2*numBoxCounter,1) = x;
             pictureData{i,1}(2*numBoxCounter-1:2*numBoxCounter,2) = y;
