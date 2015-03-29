@@ -1,0 +1,19 @@
+dataDir = '~/Git/Team_Avatar/pics/'
+savePath = '~/Git/Team_Avatar/data_labeling/testing'
+
+# repeat for all matfiles: boxes_tommy, boxes_michael, boxes_cyrus ...
+	cd ~/Git/Team_Avatar/buoy_data
+	load('boxes_tommy')
+
+	cd ../data_labeling
+
+	# repeat for all buoys 1-N in batches (n1-m1, n2-m2 ... nk-mk), for example:
+	# ni = 1		51		...		N-49
+	# mi = 50		100		...		N
+		# Label all buoys in pics ni-mi in one go.
+		addFeature(pictureData, dataDir, savePath,4,@getBuoyType,ni,mi);
+		# then load the new data into pictureData in the current workspace.
+		load('testingboxes.mat');
+
+# save final pictureData to a .mat file
+save('boxes_tommy_labeled.mat','pictureData')
