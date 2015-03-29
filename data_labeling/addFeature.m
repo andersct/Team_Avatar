@@ -58,16 +58,21 @@ for i=start:stop
         % get label
         temp = fn();
         disp(temp);
+
+		%{
         if confirmAction('Save ^? y/n: ') == 'y'
             label{j} = temp;
             j = j+1;
         else
             % nothing
         end
+		%}
+
+		label{j} = temp;
+        j = j+1;
     end
     pictureData{i, index} = cell2mat(label);
 end
 save(sprintf('%sboxes.mat',saveDir),'pictureData');
 
 end
-

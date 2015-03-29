@@ -1,0 +1,19 @@
+# start at ~/Git/Team_Avatar
+dataDir = '~/Git/Team_Avatar/pics/'
+savePath = '~/Git/Team_Avatar/data_labeling/testing'
+
+cd buoy_data
+load('boxes_tommy')
+
+cd ../data_labeling
+
+# label all buoys in all pics in one go.
+addFeature(pictureData, dataDir, savePath,4,@getBuoyType);
+# or label all buoys in pics 1-3 in one go.
+addFeature(pictureData, dataDir, savePath,4,@getBuoyType,1,3);
+# then load the new data into pictureData in the current workspace.
+load('testingboxes.mat');
+# repeat addFeature, load('testingboxes.mat') loop until all buoys have been labeled.
+
+# save progress to a new .mat file
+save('boxes_tommy_labeled.mat','pictureData')
