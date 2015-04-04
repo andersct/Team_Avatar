@@ -14,11 +14,11 @@ using namespace cv;
 void writePrediction(Mat frame, String link);
 
 /** Global variables */
-String cascade_name = "Negatives/HaarTraining/model/cascade.xml";
+String cascade_dir = "Negatives/HaarTraining/";
 String repo_dir = "/Users/cyrusanderson/Team_Avatar/";
-String label_info = "labeled_.vec";
+String test_items = "Negatives/sphere-train.txt"; //HaarTraining/code/test.txt";
 CascadeClassifier cascade;
-string window_name = "Capture - buoy detection";
+String window_name = "Capture - buoy detection";
 int numDrawn = 10;
 RNG rng(12345);
 
@@ -28,12 +28,15 @@ int main( int argc, const char** argv )
     
     CvCapture* capture;
     Mat frame;
+    // sphere|nun
+    cascade_dir += string(argv[1]) + "-model/cascade.xml";
+    test_items = string(argv[2]); //relative path from repo to test
     
     //-- 1. Load the cascades
-    if( !cascade.load(repo_dir + cascade_name) ){ printf("--(!)Error loading\n"); return -1; };
+    if( !cascade.load(repo_dir + cascade_dir) ){ printf("--(!)Error loading %s\n", (repo_dir + cascade_dir).c_str()); return -1; }; //original
     
-    ifstream link_file(repo_dir + label_info);
-    cout << repo_dir + label_info << endl;
+    ifstream link_file(repo_dir + test_items);
+    //cout << repo_dir + test_items << endl; //deb
     String line;
     while (getline(link_file, line) && line != "") {
         istringstream iss(line);
