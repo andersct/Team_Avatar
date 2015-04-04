@@ -25,13 +25,13 @@ label = initalLabel;
 for i=1:numImages
     fprintf('checking image %g\n', i);
     numObjects = length(pictureData{i, 2});
-    if numObjects < 1 || all(pictureData{i, 4} ~= 1);
+    if numObjects < 1 || all(pictureData{i, 4} ~= 2);
         continue;
     end
     im = imread([dataDir, pictureData{i, 3}, 'png'], 'png');
     points = pictureData{i, 1};
     for j=1:numObjects
-        if pictureData{i, 4}(j) ~= 1
+        if pictureData{i, 4}(j) ~= 2
             continue;
         end
         x_min = round(min(points(2*j-1,1), points(2*j,1)));
@@ -39,7 +39,7 @@ for i=1:numImages
         y_min = round(min(points(2*j-1,2), points(2*j,2)));
         y_max = round(max(points(2*j-1,2), points(2*j,2)));
         imwrite(im(y_min:y_max, x_min:x_max, :), ...
-            [saveDir, 'nun', sprintf('%g', label), '.png']);
+            [saveDir, 'sphere', sprintf('%g', label), '.png']);
         label = label+1;
     end
 end
