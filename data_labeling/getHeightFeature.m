@@ -1,4 +1,4 @@
-function plotHeightFeature(pictureData)
+function [d_sph, h_sph, d_tall, h_tall] = getHeightFeature(pictureData)
     d_tall = [];
     h_tall = [];
     d_sph = [];
@@ -18,10 +18,4 @@ function plotHeightFeature(pictureData)
             end
         end
     end
-    
-    plot(d_sph, h_sph, 'b*');
-    hold on;
-    plot(d_tall, h_tall, 'r*');
-    xlabel('d');
-    ylabel('h');
 end
