@@ -40,6 +40,7 @@ public:
 	vector<Rect> predict(Mat &frame, int min_neighbors, Size min);
 	vector<pair<Rect,PruneRule>> prune();
 	void clearPredictions();
+	vector<Rect> getPredictions() const { return predictions; }
 
 	// assumes frame size = input_size
 	void drawRoi(Mat &frame, Scalar color = Scalar(171, 122, 10));
