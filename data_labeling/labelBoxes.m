@@ -2,8 +2,8 @@
 
 figure;
 
-dataDir = '/Users/CyrusAnderson/Documents/Team_Avatar/new_pics/tommy_pics/third300/';%'/afs/umich.edu/user/a/n/andersct/Public/difficult_buoy/'; %pwd + /
-saveDir = '/Users/CyrusAnderson/Documents/Team_Avatar/Negatives/HaarTraining/';
+dataDir = '/Users/CyrusAnderson/Desktop/todo/1436369021/' %Documents/day_two_1431214652/'; %Team_Avatar/new_pics/tommy_pics/third300/';%'/afs/umich.edu/user/a/n/andersct/Public/difficult_buoy/'; %pwd + /
+saveDir = '/Users/CyrusAnderson/Desktop/labeled/1436369021/' %Documents/day_two_1431214652/';
 pics = dir(sprintf('%s*.png',dataDir));
 numPics = length(pics);
 %numPics = 450; %set this to break into small segments
@@ -34,6 +34,7 @@ for i=1:numPics
         h(2) = plot([x(2), x(2)], [y(1), y(2)], 'Color', [r, g, b], 'LineWidth', 2);
         h(3) = plot([x(1), x(2)], [y(1), y(1)], 'Color', [r, g, b], 'LineWidth', 2);
         h(4) = plot([x(1), x(2)], [y(2), y(2)], 'Color', [r, g, b], 'LineWidth', 2);
+        buoyType = getBuoyType();
         
         if confirmAction() == 'y'
             % save
@@ -41,6 +42,7 @@ for i=1:numPics
             pictureData{i,1}(2*numBoxCounter-1:2*numBoxCounter,2) = y;
             pictureData{i,2}(numBoxCounter) = color;
             pictureData{i,3} = name(1:end-3);
+            pictureData{i,4} = buoyType;
             numBoxCounter = numBoxCounter+1;
         else
             % do this box over again

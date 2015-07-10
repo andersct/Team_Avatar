@@ -3,7 +3,7 @@ function [num, response] = getBuoyType()
 %   Detailed explanation goes here
 
 while(true)
-    response = input('Buoy type? (t|tall)/(s|sphere)/(n|negative): ', 's');
+    response = input('Buoy type? (t|tall)/(s|sphere)/(n|negative)/(b|bopper): ', 's');
     num = buoyTypeToLabel(response);
     if -1 ~= num
         break;

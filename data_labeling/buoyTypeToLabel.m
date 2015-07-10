@@ -9,6 +9,9 @@ switch in
         num = 2;
     case {'n', 'negative'}
         num = 3;
+    case {'b', 'bopper'}
+        % for the bopper nun buoys we use for testing
+        num = 4;
     otherwise
         num = -1;
 end
